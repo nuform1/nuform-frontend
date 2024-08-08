@@ -48,7 +48,7 @@ const SignUp = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "https://nuform-backend.vercel.app/addUserData",
+        "https://nuform-backend.onrender.com/addUserData",
         // "http://localhost:8000/addUserData",
         values
       );

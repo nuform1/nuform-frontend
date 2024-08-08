@@ -41,7 +41,7 @@ const AllOrders = () => {
 
           const res = await axios.get(
             // `http://localhost:8000/getOrderData`,
-            `https://nuform-backend.vercel.app/getOrderData`,
+            `https://nuform-backend.onrender.com/getOrderData`,
             {
               headers: {
                 "x-api-key": token,

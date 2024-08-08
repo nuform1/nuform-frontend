@@ -62,7 +62,7 @@ const ResetPasswordMailSend = () => {
     setLoading(true);
     try {
       await axios
-        .post("https://nuform-backend.vercel.app/forgotPassword", values)
+        .post("https://nuform-backend.onrender.com/forgotPassword", values)
         // .post("http://localhost:8000/forgotPassword", values)
         .then((response) => {
           if (response.data.status) {

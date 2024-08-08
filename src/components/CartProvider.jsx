@@ -38,7 +38,7 @@ export const CartProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://nuform-backend.vercel.app/api/instagramFeed"
+          "https://nuform-backend.onrender.com/api/instagramFeed"
         );
         // const response = await axios.get("http://localhost:8000/api/instagramFeed");
         // const response = await axios.get("https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp&access_token=IGQWRNbWc3Y1ppTUE1b3ZAsVXA5RUhORHI1VGtKc0VJMWpsdlhNT2dpTnhLbHZAjU1g0NnhCQWtESDhZARVNzTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHSU9iTENhaGZALWEk4RUdtZAEg4X0lWZA0tUY2xlZADFDQ0JRYlkZD");
@@ -59,7 +59,7 @@ export const CartProvider = ({ children }) => {
       try {
         if (userID && token) {
           const res = await axios.get(
-            `https://nuform-backend.vercel.app/getUserData/${userID}`,
+            `https://nuform-backend.onrender.com/getUserData/${userID}`,
             {
               headers: {
                 "x-api-key": token,
@@ -99,8 +99,6 @@ export const CartProvider = ({ children }) => {
         localStorage.removeItem("userID");
       }
     };
-
-    
 
     fetchData(); // Call the async function
   }, [isLogin]); // Dependency array, add other dependencies if needed

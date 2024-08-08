@@ -55,7 +55,7 @@ const Myprofile = () => {
 
           const res = await axios.get(
             // `http://localhost:8000/getUserData/${userID}`,
-            `https://nuform-backend.vercel.app/getUserData/${userID}`,
+            `https://nuform-backend.onrender.com/getUserData/${userID}`,
             {
               headers: {
                 "x-api-key": token,
@@ -203,7 +203,7 @@ const Myprofile = () => {
               try {
                 const res = await axios.put(
                   // `http://localhost:8000/updateUserData/${userID}`,
-                  `https://nuform-backend.vercel.app/updateUserData/${userID}`,
+                  `https://nuform-backend.onrender.com/updateUserData/${userID}`,
                   {
                     name: values.firstName,
                     email: values.email,

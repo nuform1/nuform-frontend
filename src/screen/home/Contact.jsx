@@ -53,7 +53,7 @@ const Contact = ({ notifyError, notifySuccess }) => {
             onSubmit={(values, { setSubmitting, resetForm }) => {
               setLoading(true);
               axios
-                .post("https://nuform-backend.vercel.app/contactform", values)
+                .post("https://nuform-backend.onrender.com/contactform", values)
                 .then((response) => {
                   if (response.data.status === true) {
                     // notify();

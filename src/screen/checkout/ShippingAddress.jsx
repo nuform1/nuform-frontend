@@ -140,7 +140,7 @@ const ShippingAddress = ({ setIsCartOpen }) => {
           console.log(response);
           try {
             // const res = await axios.put(
-            //   `https://nuform-backend.vercel.app/updateSuccessOrderData/${data.orderId}/${data.paymentId}`,
+            //   `https://nuform-backend.onrender.com/updateSuccessOrderData/${data.orderId}/${data.paymentId}`,
             //   // `http://localhost:8000/updateSuccessOrderData/${data.orderId}/${data.paymentId}`,
             //   {
             //     paymentResult: "SUCCESS",
@@ -149,7 +149,7 @@ const ShippingAddress = ({ setIsCartOpen }) => {
             // if (res.data.status === true) {
             toast.loading("Creating your shipment");
             const res2 = await axios.post(
-              "https://nuform-backend.vercel.app/createShipment",
+              "https://nuform-backend.onrender.com/createShipment",
               // "http://localhost:8000/createShipment",
               {
                 order_id: data.orderId,
@@ -171,7 +171,7 @@ const ShippingAddress = ({ setIsCartOpen }) => {
           } catch (error) {
             console.log(error);
             toast.error("Something went wrong");
-                  setIsCartOpen(true);
+            setIsCartOpen(true);
           } finally {
             toast.dismiss();
           }
@@ -270,9 +270,8 @@ const ShippingAddress = ({ setIsCartOpen }) => {
                   console.log(products);
                   const response = await axios.post(
                     // "http://localhost:8000/placeOrder",
-                    "https://nuform-backend.vercel.app/placeOrder",
+                    "https://nuform-backend.onrender.com/placeOrder",
                     {
-                   
                       totalPrice: grandTotal + 60,
                       shippingAddress: {
                         firstName: values.firstName,
@@ -301,7 +300,7 @@ const ShippingAddress = ({ setIsCartOpen }) => {
                   );
 
                   // const response = await axios.post(
-                  //   // "https://nuform-backend.vercel.app/createShipment",
+                  //   // "https://nuform-backend.onrender.com/createShipment",
                   //   "http://localhost:8000/createShipment",
                   //   {
                   //     order_id: "6657e4c8b326d785ba92a8a2",

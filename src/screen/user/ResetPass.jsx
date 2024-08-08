@@ -63,7 +63,7 @@ const ResetPass = () => {
     try {
       await axios
         // .post("http://localhost:8000/resetPassword", {
-        .post("https://nuform-backend.vercel.app/resetPassword", {
+        .post("https://nuform-backend.onrender.com/resetPassword", {
           email,
           newPassword: values.password,
           resetToken: token,

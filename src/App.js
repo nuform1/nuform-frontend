@@ -49,7 +49,7 @@ function App() {
  useEffect(() => {
    const fetchData = async () => {
      try {
-       await axios.get("https://nuform-backend.vercel.app/test-me");
+       await axios.get("https://nuform-backend.onrender.com/test-me");
      } catch (error) {
        console.error("Error fetching data:", error);
      }

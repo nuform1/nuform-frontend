@@ -52,7 +52,7 @@ const Login = () => {
     setLoading(true);
     try {
       await axios
-        .post("https://nuform-backend.vercel.app/login", values)
+        .post("https://nuform-backend.onrender.com/login", values)
         // .post("http://localhost:8000/login", values)
         .then((response) => {
           localStorage.removeItem("token");

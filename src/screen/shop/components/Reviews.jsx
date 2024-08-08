@@ -61,7 +61,7 @@ const Reviews = ({ id }) => {
   //     try {
   //       const res = await axios.get(
   //         `http://localhost:8000/getProductReview`,
-  //         // `https://nuform-backend.vercel.app/getProductReview/`,
+  //         // `https://nuform-backend.onrender.com/getProductReview/`,
   //         {
   //           params: {
   //             productId: id,
@@ -84,7 +84,7 @@ const Reviews = ({ id }) => {
       try {
         const res = await axios.get(
           // `http://localhost:8000/getProductReview`,
-          `https://nuform-backend.vercel.app/getProductReview/`,
+          `https://nuform-backend.onrender.com/getProductReview/`,
           {
             params: {
               productId: id,
@@ -192,7 +192,7 @@ const Reviews = ({ id }) => {
                 values.product = id;
                 const res = await axios.post(
                   // "http://localhost:8000/addEditProductReview",
-                  "https://nuform-backend.vercel.app/addEditProductReview",
+                  "https://nuform-backend.onrender.com/addEditProductReview",
                   {
                     userPhone: values.phone,
                     userEmail: values.email,
