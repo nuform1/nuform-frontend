@@ -11,7 +11,7 @@ import Footer from "../../components/Footer";
 // import toast, { Toaster } from "react-hot-toast";
 // import HeroSection2 from "./HeroSection2";
 import HeroSection from "./HeroSection";
-import Cetifications from "./Cetifications";
+import Certifications from "./Certifications";
 import Insta from "./Insta";
 import ModalCheckout2 from "../../components/ModalCheckout2";
 import ModalOpacity from "../../components/ModalOpacity";
@@ -56,7 +56,7 @@ const Heromain = () => {
           {/* <WhyToChoose /> */}
           <SupplementPackages />
           <Insta />
-          <Cetifications />
+          <Certifications />
 
           {/* <Testimonials /> */}
           {/* <FAQ /> */}

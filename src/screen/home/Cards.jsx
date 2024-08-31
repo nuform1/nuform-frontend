@@ -14,8 +14,8 @@ import { GoShieldCheck } from "react-icons/go";
 
 const Cards = () => {
   return (
-    <div className="container pt-12 mx-auto xl:max-w-7xl lg:pt-16">
-      <div className="">
+    <div className="pt-12 lg:pt-16">
+      <div className="container mx-auto xl:max-w-7xl">
         <h3 className="text-2xl font-light select-none md:text-center md:text-3xl text-primary ">
           Why should you make NuForm a habit?
         </h3>
@@ -52,12 +52,9 @@ const Cards = () => {
                 <div className="w-2 h-2 -mt-1 -ml-[3px] rounded-full bg-primary"></div>
               </div> */}
         </div>
-
-      
       </div>
-      
 
-      <div className="pt-6 text-center md:mb-10">
+      <div className="container pt-6 mx-auto text-center md:mb-10 xl:max-w-7xl">
         <Swiper
           pagination={{
             dynamicBullets: true,
@@ -141,9 +138,8 @@ const Cards = () => {
         </Swiper>
       </div>
 
-      <div className="">
-        {/* <div className="flex flex-col gap-10 pt-14 gap-y-10 lg:flex-row lg:pt-20"> */}
-        {/* <div className="lg:w-1/2">
+      {/* <div className="flex flex-col gap-10 pt-14 gap-y-10 lg:flex-row lg:pt-20"> */}
+      {/* <div className="lg:w-1/2">
           {/* <img
           src={require("../../assets/photos/")}
             alt=""
@@ -158,7 +154,9 @@ const Cards = () => {
             />
           </video>
         </div> */}
-        <div className="px-2">
+      <div className="bg-blue-50/50">
+        {" "}
+        <div className="container px-2 pt-10 mx-auto pb-7 xl:max-w-7xl">
           {/* <h3 className="text-2xl font-light select-none md:text-3xl text-primary ">
             Nectar of Radiance: Sip Your Way to Glowing Beauty!
           </h3> */}
@@ -206,6 +204,7 @@ const Cards = () => {
           </ul>
         </div>
       </div>
+
       {/* <div className="flex flex-wrap justify-center gap-4 p-1 mt-8 md:gap-10">
         {cardData.map((card, index) => (
           <Card2 key={index} {...card} />

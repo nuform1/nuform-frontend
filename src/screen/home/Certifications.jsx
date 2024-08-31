@@ -6,10 +6,10 @@ import "swiper/css/pagination";
 
 import { Autoplay } from "swiper/modules";
 
-const Cetifications = () => {
+const Certifications = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="container relative py-10 mx-auto max-w-7xl lg:py-24">
+    <div className="relative py-10 mx-auto my-16 bg-blue-50/80 lg:py-16">
       <Swiper
         loop={true}
         autoplay={{
@@ -56,7 +56,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/FSSC-22000.png")}
             alt=""
             lazy="loading"
-            className={`h-6 mx-auto ${isHovered ? "grayscale-0" : "grayscale"}`}
+            className={`h-6 mx-auto `}
           />
         </SwiperSlide>
         <SwiperSlide className="flex items-center h-full overflow-hidden">
@@ -64,9 +64,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/Halal_logo.png")}
             alt=""
             lazy="loading"
-            className={`h-16 mx-auto duration-500  ${
-              isHovered ? "grayscale-0" : "grayscale"
-            }`}
+            className={`h-16 mx-auto `}
           />
         </SwiperSlide>
         <SwiperSlide className="flex items-center h-full overflow-hidden">
@@ -74,9 +72,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/HACCP.png")}
             alt=""
             lazy="loading"
-            className={`h-16 mx-auto duration-500 ${
-              isHovered ? "grayscale-0" : "grayscale"
-            }`}
+            className={`h-16 mx-auto `}
           />
         </SwiperSlide>
         <SwiperSlide className="flex items-center h-full overflow-hidden">
@@ -84,9 +80,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/GMP.webp")}
             alt=""
             lazy="loading"
-            className={`h-16 mx-auto duration-500 ${
-              isHovered ? "grayscale-0" : "grayscale"
-            }`}
+            className={`h-16 mx-auto `}
           />
         </SwiperSlide>
         <SwiperSlide className="flex items-center h-full overflow-hidden">
@@ -94,9 +88,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/nsf-independently-certified-logo.png")}
             alt=""
             lazy="loading"
-            className={`h-16 mx-auto duration-500 ${
-              isHovered ? "grayscale-0" : "grayscale"
-            }`}
+            className={`h-16 mx-auto `}
           />
         </SwiperSlide>
         <SwiperSlide className="flex items-center h-full overflow-hidden">
@@ -104,9 +96,7 @@ const Cetifications = () => {
             src={require("../../assets/hompage/main area/certifications/FDApng.webp")}
             alt=""
             lazy="loading"
-            className={`h-16 mx-auto my-auto duration-500 ${
-              isHovered ? "grayscale-0" : "grayscale"
-            }`}
+            className={`h-16 mx-auto my-auto `}
           />
         </SwiperSlide>
       </Swiper>
@@ -119,4 +109,4 @@ const Cetifications = () => {
   );
 };
 
-export default Cetifications;
+export default Certifications;

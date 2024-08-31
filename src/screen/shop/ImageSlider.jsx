@@ -39,7 +39,7 @@ const ImageSlider = ({ imageSources }) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
   return (
-    <div className="relative pb-2">
+    <div className="relative ">
       <Swiper
         // onBeforeInit={(swiper) => {
         //   swiper.params.navigation.prevEl = navigationPrevRef.current;

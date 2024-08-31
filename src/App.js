@@ -29,6 +29,8 @@ import ThankYou from "./screen/ThankYou/ThankYou";
 import ResetPasswordMailSend from "./screen/user/ResetPasswordMailSend";
 import ResetPass from "./screen/user/ResetPass";
 import axios from "axios";
+import Blog from "./screen/Blogs/Blog";
+import BlogDetails from "./screen/Blogs/BlogDetails";
 
 // import PaymentPage from "./screen/checkout/PaymentPage";
 
@@ -117,7 +119,8 @@ function App() {
             />
             {/* <Route exact path="/contact" element={<ContactUs />} /> */}
             {/* <Route exact path="/faq" element={<FAQPage />} /> */}
-            {/* <Route exact path="/blogs" element={<Blog />} /> */}
+            <Route exact path="/blogs" element={<Blog />} />
+            <Route exact path="/blogs/:title" element={<BlogDetails />} />
             <Route exact path="/privacy-policy" element={<Privacy />} />
             <Route exact path="/shipping-policy" element={<ShippingPolicy />} />
             <Route

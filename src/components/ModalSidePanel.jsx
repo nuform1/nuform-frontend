@@ -100,6 +100,14 @@ const ModalSidePanel = () => {
                   Learn
                 </div>
               </Link>
+              <Link to="/blogs">
+                <div
+                  onClick={() => setOpen(false)}
+                  className="w-full py-2 pl-6 border-b cursor-pointer hover:text-primary"
+                >
+                  Blog
+                </div>
+              </Link>
               {/* <div className="w-full py-2 pl-6 border-b cursor-pointer hover:text-primary">
               Join
             </div> */}

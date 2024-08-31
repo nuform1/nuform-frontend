@@ -17,7 +17,8 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 
 const Header = () => {
   const { cartItems, setOpen, setOpen2, isLogin, setIsLogin } = useCart();
-const navigate = useNavigate();
+
+  const navigate = useNavigate();
   // Calculate the total number of items in the cart
   const totalProduct = Object.keys(cartItems).length;
 
@@ -28,7 +29,6 @@ const navigate = useNavigate();
     toast.success("You have been logged out");
     setIsLogin(false);
     navigate("/");
-    
   };
 
   return (
@@ -36,8 +36,8 @@ const navigate = useNavigate();
       {/* <div
         className={`h-20 lg:h-[100px] fixed w-full z-40 px-1 text-lg text-primary  transition-all duration-300 hover:bg-white hover:shadow  `}
       > */}
-      <div className="fixed z-40 w-full h-20 px-1 text-lg bg-white border-b lg:h-24 text-primary">
-        <div className="container flex items-center justify-between h-full mx-auto xl:max-w-7xl">
+      <div className="fixed z-40 w-full h-20 px-1 text-lg bg-white border-b lg:h-24 text-primary ">
+        <div className="container flex items-center justify-between h-full mx-auto xl:max-w-7xl ">
           <div className="z-10 block cursor-pointer top-2 ">
             <a href="/">
               <img src={logo} alt="" className="h-7" />
@@ -50,6 +50,9 @@ const navigate = useNavigate();
             </div>
             <div className="font-semibold cursor-pointer ">
               <Link to="/shop">Shop</Link>
+            </div>
+            <div className="font-semibold cursor-pointer ">
+              <Link to="/blogs">Blog</Link>
             </div>
             <div className="font-semibold cursor-pointer ">
               <Link to="/learn">Learn</Link>
@@ -80,10 +83,10 @@ const navigate = useNavigate();
                       </div>
                     </Link>
                     <Link to="/orders">
-                    <div className="flex items-center gap-2 px-2 py-1 duration-500 rounded cursor-pointer md:gap-4 hover:px-4 hover:bg-gray-200">
-                      <PiPackageLight className="text-lg" />
-                      All Orders
-                    </div>
+                      <div className="flex items-center gap-2 px-2 py-1 duration-500 rounded cursor-pointer md:gap-4 hover:px-4 hover:bg-gray-200">
+                        <PiPackageLight className="text-lg" />
+                        All Orders
+                      </div>
                     </Link>
                     {/* <div className="flex items-center gap-2 px-2 py-1 duration-500 rounded cursor-pointer md:gap-4 hover:px-4 hover:bg-gray-200">
                       <IoSearchOutline className="text-lg" />
@@ -142,6 +145,68 @@ const navigate = useNavigate();
             </div>
           </div>
         </div>
+        {/* {showShopPanel && (
+          <div
+            onMouseEnter={() => setShowShopPanel(true)}
+            // onMouseLeave={() => setShowShopPanel(false)}
+            className="hidden border-t shadow-sm bg-slate-50 min-h-40 md:flex"
+          >
+            <div className="container flex gap-4 px-1 py-10 mx-auto xl:max-w-7xl xl:gap-x-10">
+              <div className="h-40 w-60">
+                <button
+                  onClick={() => setSelectedTab(0)}
+                  className={`w-full px-4 py-2 mb-2  border rounded-lg border-primary ${
+                    selectedTab === 0 && "text-white bg-primary shadow-xl"
+                  } `}
+                >
+                  Our Best Sellers
+                </button>
+                <button
+                  onClick={() => setSelectedTab(1)}
+                  className={`w-full px-4 py-2 mb-2  border rounded-lg border-primary ${
+                    selectedTab === 1 && "text-white bg-primary shadow-xl"
+                  } `}
+                >
+                  Skin Care
+                </button>
+                <button
+                  onClick={() => setSelectedTab(2)}
+                  className={`w-full px-4 py-2 mb-2  border rounded-lg border-primary ${
+                    selectedTab === 2 && "text-white bg-primary shadow-xl"
+                  } `}
+                >
+                  All Products
+                </button>
+              </div>
+              <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+                <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                  <img
+                    src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                    alt="card-image"
+                  />
+                </div>
+                <div class="p-6">
+                  <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                    UI/UX Review Check
+                  </h5>
+                  {/* <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                    The place is close to Barceloneta Beach and bus stop just 2
+                    min by walk and near to "Naviglio" where you can enjoy the
+                    main night life in Barcelona.
+                  </p> 
+                </div>
+                <div class="p-6 pt-0">
+                  <button
+                    class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                    type="button"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )} */}
       </div>
     </div>
   );

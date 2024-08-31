@@ -106,7 +106,7 @@ const ProductDetailsPeach2 = () => {
               effortlessly.
             </p>
 
-            <div className="grid gap-2 mb-5 md:grid-cols-2 lg:mb-8 text-primary lg:gap-4 ">
+            <div className="grid gap-2 p-4 mb-5 rounded-lg md:grid-cols-2 lg:mb-8 lg:gap-4 bg-blue-50/50">
               <div className="flex items-center gap-2 mb-2 ">
                 <div className="flex items-center justify-center w-8 h-8 p-1 border rounded-full border-primary">
                   <img

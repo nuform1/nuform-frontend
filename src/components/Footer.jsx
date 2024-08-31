@@ -68,7 +68,7 @@ const Footer = ({ disclaimer }) => {
             <img
               src={require("../assets/hompage/hero section/logo.png")}
               alt="Nuform Logo footer"
-              className="block mb-6 h-7"
+              className="block mx-auto mb-6 h-7 md:mx-0"
             />
           </div>
 
@@ -82,7 +82,7 @@ const Footer = ({ disclaimer }) => {
             href="https://www.instagram.com/nuform.in/"
             target="_blank"
             rel="noreferrer"
-          > <div className="flex items-center justify-center w-10 h-10 mb-6 duration-300 rounded-full cursor-pointer bg-primary">
+          > <div className="flex items-center justify-center w-10 h-10 mx-auto mb-6 duration-300 rounded-full cursor-pointer bg-primary md:mx-0">
 
               <IoLogoInstagram className="text-xl text-white" />
 
@@ -91,7 +91,7 @@ const Footer = ({ disclaimer }) => {
             Copyright © 2024 Nuform All Rights Reserved.
           </p> */}
         </div>
-        <div className="col-span-12 sm:col-span-6 md:col-span-5 lg:col-span-2">
+        <div className="col-span-6 sm:col-span-6 md:col-span-5 lg:col-span-2">
           <h3 className="mb-6 text-lg font-bold text-primary md:text-lg">
             About Us
           </h3>
@@ -108,7 +108,7 @@ const Footer = ({ disclaimer }) => {
             );
           })}
         </div>
-        <div className="col-span-12 sm:col-span-6 md:col-span-5 lg:col-span-3">
+        <div className="col-span-6 sm:col-span-6 md:col-span-5 lg:col-span-3">
           <h3 className="mb-6 text-lg font-bold text-primary md:text-lg">
             Policies
           </h3>
