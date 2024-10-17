@@ -81,6 +81,15 @@ function App() {
     }, 500);
   }, []);
 
+  useEffect(() => {
+    // Initialize Google Tag Manager
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MQCKXS7D";
+    document.body.appendChild(script);
+  }, []);
+
+
   return (
     <div>
       {visible ? (

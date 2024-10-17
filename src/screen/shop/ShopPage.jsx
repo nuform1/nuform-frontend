@@ -143,14 +143,18 @@ const BestSeller = () => {
                     <span className="">New</span>
                   </p>
                 </div>
-
-                <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
-                  SKIN 101
-                </h2>
-                <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
-                  <LuGrape />
-                  Black Grape Flavor
-                </p>
+                <Link
+                  className="mx-auto mb-6"
+                  to="/product/SKIN-101/black-grape"
+                >
+                  <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
+                    SKIN 101
+                  </h2>
+                  <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
+                    <LuGrape />
+                    Black Grape Flavor
+                  </p>
+                </Link>
 
                 <div className="flex items-center justify-between px-4 mt-2 lg:px-5">
                   <p className="">
@@ -180,7 +184,7 @@ const BestSeller = () => {
                           : priceData.Skin101GrapsPack2.weight
                       )
                     }
-                    className="px-4 py-2 text-sm duration-200 border rounded-full hover:text-white hover:bg-primary hover:scale-95"
+                    className="px-4 py-2 text-sm duration-200 border rounded-full lg:px-8 hover:text-white hover:bg-primary hover:scale-95"
                   >
                     Add To Cart
                   </button>
@@ -252,16 +256,17 @@ const BestSeller = () => {
                     <span className="">New</span>
                   </p>
                 </div>
-
-                <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
-                  SKIN 101
-                </h2>
-                <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
-                  {/* <p className="flex items-center justify-center gap-2 mb-2 text-center "> */}
-                  <GiPeach className="text-[#FFE5B4]" />
-                  Peach Flavor
-                  {/* </p> */}
-                </p>
+                <Link to="/product/SKIN-101/peach">
+                  <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
+                    SKIN 101
+                  </h2>
+                  <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
+                    {/* <p className="flex items-center justify-center gap-2 mb-2 text-center "> */}
+                    <GiPeach className="text-[#FFE5B4]" />
+                    Peach Flavor
+                    {/* </p> */}
+                  </p>
+                </Link>
 
                 <div className="flex items-center justify-between px-4 mt-2 lg:px-5">
                   <p className="">
@@ -293,7 +298,7 @@ const BestSeller = () => {
                           : priceData.Skin101Peach2.weight
                       )
                     }
-                    className="px-4 py-2 text-sm duration-200 border rounded-full hover:text-white hover:bg-primary hover:scale-95"
+                    className="px-4 py-2 text-sm duration-200 border rounded-full lg:px-8 hover:text-white hover:bg-primary hover:scale-95"
                   >
                     Add To Cart
                   </button>
@@ -377,15 +382,18 @@ const BestSeller = () => {
                     <span className="">New</span>
                   </p>
                 </div>
-
-                <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
-                  SKIN 101
-                </h2>
-                <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
-                  <LuGrape />
-                  Black Grape Flavor
-                </p>
-
+                <Link
+                  className="mx-auto mb-6"
+                  to="/product/SKIN-101/black-grape"
+                >
+                  <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
+                    SKIN 101
+                  </h2>
+                  <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
+                    <LuGrape />
+                    Black Grape Flavor
+                  </p>
+                </Link>
                 <div className="flex items-center justify-between px-4 mt-2 lg:px-5">
                   <p className="">
                     {/* You Pay: */}
@@ -414,7 +422,7 @@ const BestSeller = () => {
                           : priceData.Skin101GrapsPack2.weight
                       )
                     }
-                    className="px-4 py-2 text-sm duration-200 border rounded-full hover:text-white hover:bg-primary hover:scale-95"
+                    className="px-4 py-2 text-sm duration-200 border rounded-full lg:px-8 hover:text-white hover:bg-primary hover:scale-95"
                   >
                     Add To Cart
                   </button>
@@ -486,16 +494,17 @@ const BestSeller = () => {
                     <span className="">New</span>
                   </p>
                 </div>
-
-                <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
-                  SKIN 101
-                </h2>
-                <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
-                  {/* <p className="flex items-center justify-center gap-2 mb-2 text-center "> */}
-                  <GiPeach className="text-[#FFE5B4]" />
-                  Peach Flavor
-                  {/* </p> */}
-                </p>
+                <Link to="/product/SKIN-101/peach">
+                  <h2 className="px-4 mb-2 text-2xl font-semibold text-left text-primary lg:px-5">
+                    SKIN 101
+                  </h2>
+                  <p className="flex items-center gap-2 px-4 mb-2 lg:px-5">
+                    {/* <p className="flex items-center justify-center gap-2 mb-2 text-center "> */}
+                    <GiPeach className="text-[#FFE5B4]" />
+                    Peach Flavor
+                    {/* </p> */}
+                  </p>
+                </Link>
 
                 <div className="flex items-center justify-between px-4 mt-2 lg:px-5">
                   <p className="">
@@ -530,7 +539,7 @@ const BestSeller = () => {
                           : priceData.Skin101Peach2.flavor
                       )
                     }
-                    className="px-4 py-2 text-sm duration-200 border rounded-full hover:text-white hover:bg-primary hover:scale-95"
+                    className="px-4 py-2 text-sm duration-200 border rounded-full lg:px-8 hover:text-white hover:bg-primary hover:scale-95"
                   >
                     Add To Cart
                   </button>

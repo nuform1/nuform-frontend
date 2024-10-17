@@ -159,7 +159,6 @@ const Footer = ({ disclaimer }) => {
           </a>
         </div>
       </div>
-
       {disclaimer ? (
         <div className="container px-1 py-4 mx-auto border-t xl:max-w-7xl lg:px-0 text-primary">
           <p className="italic font-medium">Disclaimer</p>
@@ -190,7 +189,7 @@ const Footer = ({ disclaimer }) => {
           /> */}
         </div>
       ) : (
-        <div className="container px-1 py-4 mx-auto border-t xl:max-w-7xl lg:px-0 text-primary">
+        <div className="container px-1 py-4 mx-auto text-sm border-t xl:max-w-7xl lg:px-0 text-primary">
           Copyright © 2024 Nuform All Rights Reserved.
         </div>
       )}
