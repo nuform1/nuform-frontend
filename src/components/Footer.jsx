@@ -82,11 +82,12 @@ const Footer = ({ disclaimer }) => {
             href="https://www.instagram.com/nuform.in/"
             target="_blank"
             rel="noreferrer"
-          > <div className="flex items-center justify-center w-10 h-10 mx-auto mb-6 duration-300 rounded-full cursor-pointer bg-primary md:mx-0">
-
+          >
+            {" "}
+            <div className="flex items-center justify-center w-10 h-10 mx-auto mb-6 duration-300 rounded-full cursor-pointer bg-primary md:mx-0">
               <IoLogoInstagram className="text-xl text-white" />
-
-            </div></a>
+            </div>
+          </a>
           {/* <p className="text-sm text-primary ">
             Copyright © 2024 Nuform All Rights Reserved.
           </p> */}
@@ -130,8 +131,7 @@ const Footer = ({ disclaimer }) => {
             Contact Us
           </h3>
           <p className="pb-1 duration-200 cursor-pointer text-primary hover:text-primary hover:delay-300">
-            B-1001, Jal Vayu Towers, Khairatabad Circle No 17, Hyderabad,
-            Telangana, 500080
+            Hyderabad, Telangana
           </p>
 
           <a
@@ -189,8 +189,12 @@ const Footer = ({ disclaimer }) => {
           /> */}
         </div>
       ) : (
-        <div className="container px-1 py-4 mx-auto text-sm border-t xl:max-w-7xl lg:px-0 text-primary">
-          Copyright © 2024 Nuform All Rights Reserved.
+        <div className="container flex flex-col items-center px-1 py-4 mx-auto text-xs border-t xl:max-w-7xl lg:px-0 text-primary md:flex-row md:justify-between">
+          <p>Copyright © 2024 Nuform All Rights Reserved.</p>
+          <p>
+            Designed & Developed by{" "}
+            <a href="mailto:srcreativegraphics@gmail.com" target="_blank" rel="noreferrer" className="font-bold ">SRCG</a>
+          </p>
         </div>
       )}
     </div>

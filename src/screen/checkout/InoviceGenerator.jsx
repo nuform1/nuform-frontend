@@ -54,8 +54,8 @@ const InoviceGenerator = () => {
                 Arzen Health & Wellness Private Limited
               </h5>
               <p className="text-xs ">
-                B-1001, Jal Vayu Towers, Khairatabad Circle No 17, Hyderabad,
-                <br className="hidden sm:block" /> Telangana, 500080
+                Hyderabad,
+                <br className="hidden sm:block" /> Telangana
               </p>
             </div>
 
@@ -64,8 +64,7 @@ const InoviceGenerator = () => {
               <div className="pb-5 ">
                 <h5 className="text-sm font-semibold">Salman Ansari</h5>
                 <p className="pb-0.5 md:pb-1 text-xs">
-                  B-1001, Jal Vayu Towers, Khairatabad Circle No 17, Hyderabad,
-                  Telangana, 500080
+                  Hyderabad, Telangana
                 </p>
                 <p className="text-xs ">Ph: +91 9000000000</p>
                 {/* <p className="pb-1">Email: salman.broaddcast@gmail.com</p> */}

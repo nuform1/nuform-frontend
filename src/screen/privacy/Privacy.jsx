@@ -243,8 +243,7 @@ const Privacy = () => {
           >
             feedback@nuform.in
           </a>{" "}
-          or by post at the address below: B-1001, Jal Vayu Towers, Khairatabad
-          Circle No 17, Hyderabad, Telangana, 500080
+          or by post at the address below: Hyderabad, Telangana
         </p>
       </div>
       <ModalSidePanel />
